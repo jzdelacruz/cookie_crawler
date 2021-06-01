@@ -30,7 +30,7 @@ def get_cookies(url):
     df = pd.DataFrame(rows)
     # df = df[df.columns[0:3]] 
     # df.columns = ['timestampe','domain','cookie_name'] #Extracted data have no headers.
-    con.close() #close all services that's using the cookie file so that it can be removed
+    con.close() #close all services that're using the cookie file so that it can be removed
     os.remove(src) #DELETE COOKIES FILE TO RESET
     return df
 
